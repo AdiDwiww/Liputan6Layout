@@ -1,0 +1,117 @@
+
+.navbar .container-fluid {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+
+.btn-gradient {
+  background: linear-gradient(to right, #FF6F00, #E65100);
+  color: #fff;
+}
+
+
+.nav-link { transition: color .3s, border-color .3s; }
+.nav-link:hover,
+.nav-link.active { color: #FF5E00 !important; border-bottom: 2px solid #FF5E00; }
+
+
+.nav-menu-bar {
+  background: #fff;
+  box-shadow: 0 3px 6px rgba(0,0,0,.08);
+}
+@media (max-width: 767.98px) {
+  .nav-menu-bar { min-height: 44px; } 
+}
+
+
+@media (max-width: 575.98px) {
+  .topbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+  }
+  .topbar > * { min-width: 0; }
+
+
+  .topbar .navbar-brand { order: 1 !important; }
+  .topbar .btn-login     { order: 2 !important; margin-left: auto; height: 36px; padding: .375rem .75rem; }
+  .topbar .navbar-toggler{ order: 3 !important; flex: 0 0 auto; margin-left: 0; }
+  .topbar .search-form   { order: 4 !important; flex: 0 0 100% !important; width: 100% !important; margin: .25rem 0 0 0 !important; }
+
+  .topbar .search-form .form-control { min-width: 0; flex: 1 1 auto; height: 36px; padding: .375rem .75rem; }
+  .topbar .search-form .btn          { flex: 0 0 auto; height: 36px; padding: .375rem .75rem; }
+
+  .navbar-brand img { width: 120px; height: auto; }
+}
+
+
+.scroll-nav {
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  background: rgb(255, 247, 237);
+}
+.scroll-nav::-webkit-scrollbar { display: none; }
+.scroll-nav ul {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 10px;
+}
+.scroll-nav li a {
+  display: inline-block;
+  background: bisque;
+  border-radius: 50px;
+  padding: 2px 8px;
+  transition: .3s;
+  white-space: nowrap;
+}
+
+
+.with-line { position: relative; padding-left: 10px; }
+.with-line::before { content: "|"; position: absolute; left: 0; top: 0; color: #FF5E00; font-weight: 700; }
+
+.news-col { cursor: pointer; transition: color .3s; }
+.news-col:hover p,
+.news-col:hover a,
+.news-col:hover h2 { color: #FF5E00 !important; }
+
+.g { position: relative; padding-left: 5rem; }
+.number {
+  position: absolute; left: .8rem; top: 50%; transform: translateY(-50%);
+  font-size: 4rem; font-weight: 700; color: #FF5E00; line-height: 1;
+}
+
+.list-group-item { transition: color .2s; }
+.list-group-item:hover { color: #FF6600; cursor: pointer; }
+
+.text-orange { color: #FF5E00; }
+.fs-7 { font-size: .75rem; }
+
+.thumb-150 { width: 100%; height: 150px; object-fit: cover; }
+.thumb-90  { width: 90px;  height: 90px;  object-fit: cover; }
+
+.bg-hero {
+  background-image: url('https://img.antaranews.com/cache/1200x800/2025/05/09/IMG_20250509_013336.jpg.webp');
+  background-size: cover; background-position: center; background-repeat: no-repeat;
+}
+.hero-left { min-height: 300px; }
+.ad-side   { max-height: 420px; object-fit: cover; }
+
+.container-1000 { max-width: 1000px; margin: 0 auto; }
+
+
+.footer-links { font-size: 14px; gap: 8px; }
+.partner-logos {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+  font-size: 13px; line-height: 1; justify-content: flex-start;
+}
+.partner-logos .item { display: flex; align-items: center; gap: 4px; flex: 0 0 25%; max-width: 25%; }
+@media (max-width: 991.98px) { .partner-logos .item { flex: 0 0 33.333%; max-width: 33.333%; } }
+@media (max-width: 575.98px) { .partner-logos .item { flex: 0 0 50%;     max-width: 50%; } }
